@@ -39,7 +39,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/joanna-bennett-logo.ico`,
       },
     },
     // https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
