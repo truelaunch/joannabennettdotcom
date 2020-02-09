@@ -14,7 +14,7 @@ import ProjectCard from "components/ProjectCard"
 const Hero = styled("div")`
   padding-top: 2.5em;
   padding-bottom: 3em;
-  margin-bottom: 6em;
+  margin-bottom: 2em;
   max-width: 830px;
 
   @media (max-width: ${dimensions.maxwidthMobile}px) {
@@ -23,6 +23,21 @@ const Hero = styled("div")`
 
   h1 {
     margin-bottom: 1em;
+
+    strong {
+      &:nth-of-type(1) {
+        color: #ff7c00;
+      }
+      &:nth-of-type(2) {
+        color: #10a99d;
+      }
+      &:nth-of-type(3) {
+        color: #0b7bd2;
+      }
+      &:nth-of-type(4) {
+        color: #c970d6;
+      }
+    }
 
     a {
       text-decoration: none;
@@ -167,7 +182,7 @@ const RenderBody = ({ home, projects, meta }) => (
         <Button>{RichText.render(home.hero_button_text)}</Button>
       </a> */}
     </Hero>
-    <Section>
+    {/* <Section>
       {projects.map((project, i) => (
         <ProjectCard
           key={i}
@@ -181,7 +196,7 @@ const RenderBody = ({ home, projects, meta }) => (
       <WorkAction to={"/work"}>
         See more work <span>&#8594;</span>
       </WorkAction>
-    </Section>
+    </Section> */}
     <Section>
       {RichText.render(home.about_title)}
       <About bio={home.about_bio} socialLinks={home.about_links} />

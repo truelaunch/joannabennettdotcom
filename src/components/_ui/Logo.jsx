@@ -32,7 +32,7 @@ const Logo = () => (
           r="45"
         ></circle>
         <circle
-          fill="#DC4021"
+          fill="#ff7c00"
           style={{ mixBlendMode: "multiply" }}
           cx="111"
           cy="54.5"

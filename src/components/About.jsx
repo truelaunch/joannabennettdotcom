@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import dimensions from "styles/dimensions"
 import { RichText } from "prismic-reactjs"
 import PropTypes from "prop-types"
-import jo from "images/joanna.png"
+import jo from "images/joanna.jpg"
 
 const AboutContainer = styled("div")`
   padding-top: 1em;
@@ -18,7 +18,6 @@ const AboutContainer = styled("div")`
 
   @media (max-width: ${dimensions.maxwidthMobile}px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 2em;
   }
 `
@@ -79,6 +78,8 @@ const AboutActions = styled("div")`
 const Joanna = styled("img")`
   max-width: 303px;
   margin-top: 0.25em;
+  display: block;
+  margin: auto;
 `
 
 const About = ({ bio, socialLinks }) => (
